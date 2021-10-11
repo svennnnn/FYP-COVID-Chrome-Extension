@@ -1,0 +1,28 @@
+{
+    "name": "Covid False News Detector",
+    "description": "Control version",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "icons": {
+        "16": "./icon-16x16.png",
+        "32": "./icon-32x32.png",
+        "48": "./icon-48x48.png",
+        "128": "./icon-128x128.png"
+    },
+    "background": {
+        "page": "background.html"
+    },
+     "content_scripts":[{
+      "matches":["<all_urls>"],
+      "js":["model.js","sweetalert2.min.js","sweetalert2.js"],
+	  "css": ["sweetalert2.min.css", "sweetalert2.css"]
+    }
+    ],
+    "options_page": "",
+    "browser_action": {
+        "default_popup": "./popup.html"
+    },
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2M/bwMWCquEzm+DTedxtdCb2lia7qip8+35AyrQMF6dHRpk6Ff05ZhGA6AozfBoZjk1dPUI5mctVDJenFDMDHryFUA7gYLV0X96RTuBk9hTp9wWp0GocvMPX7/uYMssD2Ul89vgrZiJeK10lrvv/ZfaO/6aPHVRw2vM1nVHf18VIHychej1OxRwXopaNxRHseJWUm698Ccx6sxCfluFYE+o8QzJpYUuhcRJ8EBEV1I2D+CYfNcY6ew5YOw/nv66BGqb+5i71qkEiMiS6yelk4OMqUtt47ynUgINzIixMxa1SKA8+XCgKfD4MI+V6kpChcCrVDYCBoaBXdO/EDCoiEQIDAQAB",
+    "permissions": [],
+    "content_security_policy": "script-src 'self' https://cdn.firebase.com https://apis.google.com https://www.gstatic.com https://cdn.jsdelivr.net; object-src 'self'"
+}
