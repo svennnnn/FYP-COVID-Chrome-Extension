@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+            width: 300px;
+            height: 600px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2em;
+            color: ghostwhite;
+
+            background-color: white;
+        }
+
+        #my_span {
+            color: ghostwhite;
+        }
+
+        #sign_out {
+            background-color: #cc7641;
+            width: 160px;
+            height: 40px;
+            border-radius: 5px;
+            /*transform: rotate(45deg);*/
+            /*transition-duration: 0.4s;*/
+
+            cursor: pointer;
+
+        }
+
+
+
+        /*@keyframes choosing {*/
+            /*100% {*/
+                /*transform: rotate(405deg) scale(2.5);*/
+                /*box-shadow: 0px 0px 20px 2px white; ;*/
+            /*}*/
+        /*}*/
+
+        #sign_out:hover {
+            /*animation-name: choosing;*/
+            /*animation-direction: normal;*/
+            /*animation-fill-mode: forwards;*/
+            /*animation-duration: 0.4s;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div><h1 style = "font-size:20px; color:black; text-align:center"> COVID-19 FALSE DETECTOR</h1></div>
+    <div><h2 style = "font-size:16px; color:black; text-align:left">You are now logged in. Refresh the current web page you are on or visit another web page to start using the COVID-19 False Detector extension.</h2></div>
+    <div id="sign_out" style = text-align:center><span id = my_span>Sign Out</span></div>
+
+    <script src="main-script.js"></script>
+</body>
+
+</html>
